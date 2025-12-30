@@ -22,7 +22,7 @@ public class SandstoneGrassSplitGen implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
         
-        Registry.register(BuiltInRegistries.CHUNK_GENERATOR, Identifier.fromNamespaceAndPath(MOD_ID,"testexample"), SandstoneGrassChunkGenerator.CODEC);
+        Registry.register(BuiltInRegistries.CHUNK_GENERATOR, Identifier.fromNamespaceAndPath(MOD_ID,"sandstone_grass"), SandstoneGrassChunkGenerator.CODEC);
 
 		LOGGER.info("Hello Fabric world!");
 	}

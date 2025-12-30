@@ -3,7 +3,7 @@
     "minecraft:overworld": {
       "type": "minecraft:overworld",
       "generator": {
-        "type": "sandstone-grass-split-gen:testexample",
+        "type": "sandstone-grass-split-gen:sandstone_grass",
         "biome_source": {
           "type": "minecraft:fixed",
           "biome": "minecraft:forest"
