@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "sandstone-grass-split-gen",
+	"version": "${version}",
+	"name": "Sandstone Grass Split Gen",
+	"description": "Adds new world generation preset that is just superflat but half sandstone and half grass",
+	"authors": [
+		"westonbattles"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sandstone-grass-split-gen/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.westonbattles.sandstonegrasssplitgen.SandstoneGrassSplitGen"
+		],
+		"client": [
+			"com.westonbattles.sandstonegrasssplitgen.SandstoneGrassSplitGenClient"
+		]
+	},
+	"mixins": [
+		"sandstone-grass-split-gen.mixins.json",
+		{
+			"config": "sandstone-grass-split-gen.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
